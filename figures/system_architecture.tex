@@ -1,0 +1,9 @@
+\begin{tikzpicture}[font=\small, node distance=2cm, auto, thick]
+    \node (sensors) [draw, rectangle, fill=white] {Sensors};
+    \node (edge) [draw, rectangle, right of=sensors, xshift=1cm, fill=lightgray!20] {Edge IDS};
+    \node (gateway) [draw, rectangle, right of=edge, xshift=1cm, fill=white] {Gateway};
+    \node (cloud) [draw, rectangle, right of=gateway, xshift=1cm, fill=white] {Cloud};
+    \draw[->] (sensors) -- (edge);
+    \draw[->] (edge) -- (gateway);
+    \draw[->] (gateway) -- (cloud);
+\end{tikzpicture}

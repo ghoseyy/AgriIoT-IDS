@@ -1,0 +1,115 @@
+{
+  "config": {
+    "model": "autoencoder",
+    "latent_dim": 16,
+    "hidden_dims": [
+      128,
+      64
+    ],
+    "epochs": 20,
+    "batch_size": 512,
+    "learning_rate": 0.001,
+    "device": "cpu",
+    "train_samples_used": 1362792,
+    "val_samples_used": 732542,
+    "test_samples_used": 732542
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.2092922230141479
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.11565260244905896
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.11470550891745294
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.08802227277813714
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.0896350667248765
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.07447155013909575
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.07080562660123256
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.08390403916456582
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.04811074402552348
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.07223076754511558
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.05947037174338494
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.06339789577560388
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.052707284029109
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.05198003006457627
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.07699948125550267
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.039137513532359135
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.06511380503900367
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.05422807857207516
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.04617066624667791
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.06690436795665834
+    }
+  ],
+  "validation_metrics": {
+    "threshold": 0.00381846958771348,
+    "precision": 0.678647540558931,
+    "recall": 0.7060565333946629,
+    "f1": 0.6920807685872542,
+    "roc_auc": 0.8363272008578744,
+    "pr_auc": 0.7917359554034157
+  },
+  "test_metrics": {
+    "threshold": 0.00381846958771348,
+    "precision": 0.679215985304057,
+    "recall": 0.7042022725475963,
+    "f1": 0.6914834869167403,
+    "roc_auc": 0.8363166195371642,
+    "pr_auc": 0.791427851591261
+  }
+}

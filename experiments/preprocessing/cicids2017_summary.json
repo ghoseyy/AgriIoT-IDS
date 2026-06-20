@@ -1,0 +1,25 @@
+{
+  "source_files": [
+    "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv.parquet",
+    "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv.parquet",
+    "Friday-WorkingHours-Morning.pcap_ISCX.csv.parquet",
+    "Monday-WorkingHours.pcap_ISCX.csv.parquet",
+    "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv.parquet",
+    "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv.parquet",
+    "Tuesday-WorkingHours.pcap_ISCX.csv.parquet",
+    "Wednesday-workingHours.pcap_ISCX.csv.parquet"
+  ],
+  "label_column": "Label",
+  "total_rows": 2830743,
+  "retained_rows": 2827876,
+  "dropped_rows": 2867,
+  "normal_rows": 2271320,
+  "anomaly_rows": 556556,
+  "feature_count": 78,
+  "train_samples": 1362792,
+  "val_samples": 732542,
+  "val_anomalies": 278278,
+  "test_samples": 732542,
+  "test_anomalies": 278278,
+  "artifact_dir": "experiments/preprocessing/cicids2017"
+}

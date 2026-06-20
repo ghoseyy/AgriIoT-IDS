@@ -1,0 +1,20 @@
+{
+  "best_value": 0.7431503870574933,
+  "best_params": {
+    "latent_dim": 8,
+    "learning_rate": 0.0036492655425498025,
+    "batch_size": 512,
+    "depth": 1,
+    "width": 256
+  },
+  "best_trial_metrics": {
+    "threshold": 0.03245722874999046,
+    "precision": 0.6348168511776506,
+    "recall": 0.8960671211326691,
+    "f1": 0.7431503870574933,
+    "roc_auc": 0.8512922272682654,
+    "pr_auc": 0.7848221708738725
+  },
+  "train_samples_used": 50000,
+  "val_samples_used": 25000
+}

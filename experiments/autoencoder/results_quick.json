@@ -1,0 +1,43 @@
+{
+  "config": {
+    "model": "autoencoder",
+    "latent_dim": 16,
+    "hidden_dims": [
+      128,
+      64
+    ],
+    "epochs": 2,
+    "batch_size": 2048,
+    "learning_rate": 0.001,
+    "device": "cpu",
+    "train_samples_used": 100000,
+    "val_samples_used": 50000,
+    "test_samples_used": 50000
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.6637292014980316
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.3967343647289276
+    }
+  ],
+  "validation_metrics": {
+    "threshold": 0.04746288061141968,
+    "precision": 0.5354264371366789,
+    "recall": 0.9969671616816566,
+    "f1": 0.6966912100560905,
+    "roc_auc": 0.79987342817099,
+    "pr_auc": 0.7286928401141893
+  },
+  "test_metrics": {
+    "threshold": 0.04746288061141968,
+    "precision": 0.5361336434284417,
+    "recall": 0.99788840204825,
+    "f1": 0.6975148059998894,
+    "roc_auc": 0.8022951409734105,
+    "pr_auc": 0.7280813800729532
+  }
+}
