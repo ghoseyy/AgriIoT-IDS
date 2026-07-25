@@ -11,7 +11,7 @@
 # # ============================================================
 # # CONFIGURATION - Fill these in before running
 # # ============================================================
-# API_KEY = "***REMOVED***"  # Your Zotero API key
+# API_KEY = os.environ.get("ZOTERO_API_KEY", "")  # Set ZOTERO_API_KEY in your environment
 # USER_ID = "20553614"  # PASTE YOUR USER ID HERE (number from zotero.org/settings/keys)
 # # ============================================================
 
@@ -272,8 +272,10 @@ import requests
 import json
 import time
 
-API_KEY = "***REMOVED***"
-USER_ID = "20553614"  # ADD YOUR USER ID HERE
+import os
+
+API_KEY = os.environ.get("ZOTERO_API_KEY", "")
+USER_ID = os.environ.get("ZOTERO_USER_ID", "20553614")  # Set ZOTERO_USER_ID or use default
 
 BASE_URL = f"https://api.zotero.org/users/{USER_ID}"
 HEADERS = {

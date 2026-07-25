@@ -41,6 +41,8 @@ Hybrid Quantum-Classical Intrusion Detection System for Precision Agriculture Io
 - [ ] Implement semi-supervised learning to handle label sparsity
 - [ ] Agent coordination and ensemble voting mechanism
 - [ ] Benchmark against all prior phases
+- [x] Autonomous recovery agent (Q-learning, isolate/rollback/reroute) under compute + connectivity constraints — see `src/agri_iot_ids/recovery/`, `experiments/recovery/results.json`
+- [ ] Replace simulated recovery environment with hardware-in-the-loop or emulated-protocol (LoRaWAN/Modbus) validation
 
 ### Phase 5 — Real-World Validation & Paper Writing
 - [ ] Validate on IoT-23 and N-BaIoT datasets
@@ -81,8 +83,15 @@ AgriIoT-IDS-Research/
 │   ├── train_autoencoder.py
 │   ├── train_vae.py
 │   ├── optimize_autoencoder.py
-│   └── optimize_vae.py
+│   ├── optimize_vae.py
+│   ├── run_recovery_experiment.py
+│   └── generate_recovery_figure.py
 ├── src/                   # Research code package
+│   └── agri_iot_ids/
+│       ├── data/          # Data loading and preprocessing
+│       ├── models/        # AE, VAE, etc.
+│       ├── training/      # Training engine
+│       └── recovery/      # Q-learning recovery agent
 ├── writing/               # Paper drafts, notes
 ├── zotero/                # Zotero bibliography
 │   └── AgriIoT-IDS-Research.bib
