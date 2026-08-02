@@ -1,0 +1,232 @@
+{
+  "prepared_dir": "experiments/preprocessing/cicids2017",
+  "confidence_band": 0.15,
+  "tier1_rf_only_metrics": {
+    "precision": 0.9986657028077784,
+    "recall": 0.997843882735969,
+    "f1": 0.9982546236296279,
+    "roc_auc": 0.9999472569454219,
+    "pr_auc": 0.9999160280092773,
+    "false_positive_rate": 0.0008167057041720234,
+    "n_test": 732542
+  },
+  "tier1_plus_tier2_metrics": {
+    "precision": 0.998872510878649,
+    "recall": 0.9964675612157626,
+    "f1": 0.9976685867246162,
+    "roc_auc": 0.9999113888864455,
+    "pr_auc": 0.9998067531204604,
+    "false_positive_rate": 0.000689026645298769,
+    "n_test": 732542
+  },
+  "empirical_detector_confidence": {
+    "conf_active_mean": 0.9965671819860257,
+    "conf_active_std": 0.020495604029942417,
+    "conf_idle_mean": 0.001216371833563357,
+    "conf_idle_std": 0.010900775621618088
+  },
+  "recovery_results": [
+    {
+      "confidence_source": "grounded",
+      "connectivity": 1.0,
+      "compute_budget": 3,
+      "baseline_mttr": 9,
+      "agent_mttr": 2,
+      "mttr_gain_pct": 77.77777777777779,
+      "baseline_downtime": 10,
+      "agent_downtime": 3,
+      "downtime_gain_pct": 70.0
+    },
+    {
+      "confidence_source": "grounded",
+      "connectivity": 1.0,
+      "compute_budget": 2,
+      "baseline_mttr": 9,
+      "agent_mttr": 2,
+      "mttr_gain_pct": 77.77777777777779,
+      "baseline_downtime": 10,
+      "agent_downtime": 3,
+      "downtime_gain_pct": 70.0
+    },
+    {
+      "confidence_source": "grounded",
+      "connectivity": 1.0,
+      "compute_budget": 1,
+      "baseline_mttr": 9,
+      "agent_mttr": 3,
+      "mttr_gain_pct": 66.66666666666666,
+      "baseline_downtime": 10,
+      "agent_downtime": 4,
+      "downtime_gain_pct": 60.0
+    },
+    {
+      "confidence_source": "grounded",
+      "connectivity": 0.7,
+      "compute_budget": 3,
+      "baseline_mttr": 9.82,
+      "agent_mttr": 2.3733333333333335,
+      "mttr_gain_pct": 75.83163611676851,
+      "baseline_downtime": 10.82,
+      "agent_downtime": 3.3733333333333335,
+      "downtime_gain_pct": 68.82316697473814
+    },
+    {
+      "confidence_source": "grounded",
+      "connectivity": 0.7,
+      "compute_budget": 2,
+      "baseline_mttr": 9.82,
+      "agent_mttr": 2.4466666666666668,
+      "mttr_gain_pct": 75.08486082824169,
+      "baseline_downtime": 10.82,
+      "agent_downtime": 3.4466666666666668,
+      "downtime_gain_pct": 68.14540973505852
+    },
+    {
+      "confidence_source": "grounded",
+      "connectivity": 0.7,
+      "compute_budget": 1,
+      "baseline_mttr": 9.826666666666666,
+      "agent_mttr": 4.26,
+      "mttr_gain_pct": 56.64857530529173,
+      "baseline_downtime": 10.826666666666666,
+      "agent_downtime": 5.26,
+      "downtime_gain_pct": 51.416256157635466
+    },
+    {
+      "confidence_source": "grounded",
+      "connectivity": 0.4,
+      "compute_budget": 3,
+      "baseline_mttr": 12.023333333333333,
+      "agent_mttr": 3.4066666666666667,
+      "mttr_gain_pct": 71.66620460216247,
+      "baseline_downtime": 13.023333333333333,
+      "agent_downtime": 4.406666666666666,
+      "downtime_gain_pct": 66.16329664704377
+    },
+    {
+      "confidence_source": "grounded",
+      "connectivity": 0.4,
+      "compute_budget": 2,
+      "baseline_mttr": 12.023333333333333,
+      "agent_mttr": 3.6666666666666665,
+      "mttr_gain_pct": 69.50374272248406,
+      "baseline_downtime": 13.023333333333333,
+      "agent_downtime": 4.666666666666667,
+      "downtime_gain_pct": 64.16687995904785
+    },
+    {
+      "confidence_source": "grounded",
+      "connectivity": 0.4,
+      "compute_budget": 1,
+      "baseline_mttr": 12.34,
+      "agent_mttr": 6.9,
+      "mttr_gain_pct": 44.08427876823338,
+      "baseline_downtime": 13.34,
+      "agent_downtime": 7.9,
+      "downtime_gain_pct": 40.779610194902546
+    },
+    {
+      "confidence_source": "original_assumed",
+      "connectivity": 1.0,
+      "compute_budget": 3,
+      "baseline_mttr": 9,
+      "agent_mttr": 2,
+      "mttr_gain_pct": 77.77777777777779,
+      "baseline_downtime": 10,
+      "agent_downtime": 3,
+      "downtime_gain_pct": 70.0
+    },
+    {
+      "confidence_source": "original_assumed",
+      "connectivity": 1.0,
+      "compute_budget": 2,
+      "baseline_mttr": 9,
+      "agent_mttr": 2,
+      "mttr_gain_pct": 77.77777777777779,
+      "baseline_downtime": 10,
+      "agent_downtime": 3,
+      "downtime_gain_pct": 70.0
+    },
+    {
+      "confidence_source": "original_assumed",
+      "connectivity": 1.0,
+      "compute_budget": 1,
+      "baseline_mttr": 9,
+      "agent_mttr": 3.1066666666666665,
+      "mttr_gain_pct": 65.48148148148148,
+      "baseline_downtime": 10,
+      "agent_downtime": 4.1066666666666665,
+      "downtime_gain_pct": 58.93333333333334
+    },
+    {
+      "confidence_source": "original_assumed",
+      "connectivity": 0.7,
+      "compute_budget": 3,
+      "baseline_mttr": 9.82,
+      "agent_mttr": 2.41,
+      "mttr_gain_pct": 75.45824847250509,
+      "baseline_downtime": 10.82,
+      "agent_downtime": 3.41,
+      "downtime_gain_pct": 68.48428835489834
+    },
+    {
+      "confidence_source": "original_assumed",
+      "connectivity": 0.7,
+      "compute_budget": 2,
+      "baseline_mttr": 9.82,
+      "agent_mttr": 2.4966666666666666,
+      "mttr_gain_pct": 74.57569585879159,
+      "baseline_downtime": 10.82,
+      "agent_downtime": 3.4966666666666666,
+      "downtime_gain_pct": 67.68330252618608
+    },
+    {
+      "confidence_source": "original_assumed",
+      "connectivity": 0.7,
+      "compute_budget": 1,
+      "baseline_mttr": 9.826666666666666,
+      "agent_mttr": 4.59,
+      "mttr_gain_pct": 53.29036635006784,
+      "baseline_downtime": 10.826666666666666,
+      "agent_downtime": 5.59,
+      "downtime_gain_pct": 48.36822660098522
+    },
+    {
+      "confidence_source": "original_assumed",
+      "connectivity": 0.4,
+      "compute_budget": 3,
+      "baseline_mttr": 12.023333333333333,
+      "agent_mttr": 3.56,
+      "mttr_gain_pct": 70.39090657055725,
+      "baseline_downtime": 13.023333333333333,
+      "agent_downtime": 4.56,
+      "downtime_gain_pct": 64.98592270284107
+    },
+    {
+      "confidence_source": "original_assumed",
+      "connectivity": 0.4,
+      "compute_budget": 2,
+      "baseline_mttr": 12.023333333333333,
+      "agent_mttr": 3.8433333333333333,
+      "mttr_gain_pct": 68.03437759911284,
+      "baseline_downtime": 13.023333333333333,
+      "agent_downtime": 4.843333333333334,
+      "downtime_gain_pct": 62.810340414640386
+    },
+    {
+      "confidence_source": "original_assumed",
+      "connectivity": 0.4,
+      "compute_budget": 1,
+      "baseline_mttr": 12.34,
+      "agent_mttr": 7.296666666666667,
+      "mttr_gain_pct": 40.8698001080497,
+      "baseline_downtime": 13.34,
+      "agent_downtime": 8.296666666666667,
+      "downtime_gain_pct": 37.80609695152424
+    }
+  ],
+  "recovery_grounded_overall_mttr_gain_pct": 68.33794672948935,
+  "recovery_grounded_overall_downtime_gain_pct": 62.16606885204737,
+  "recovery_original_assumed_overall_mttr_gain_pct": 67.07293688845793,
+  "recovery_original_assumed_overall_downtime_gain_pct": 61.007945653823185
+}

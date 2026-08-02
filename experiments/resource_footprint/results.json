@@ -1,0 +1,43 @@
+{
+  "sklearn_models": [
+    {
+      "model": "Random Forest",
+      "size_kb": 21200.87,
+      "inference_latency_ms_per_sample": 0.01446,
+      "benchmarked_on_n_samples": 1000
+    },
+    {
+      "model": "Decision Tree",
+      "size_kb": 93.4,
+      "inference_latency_ms_per_sample": 0.00025,
+      "benchmarked_on_n_samples": 1000
+    },
+    {
+      "model": "Logistic Regression",
+      "size_kb": 1.32,
+      "inference_latency_ms_per_sample": 0.00095,
+      "benchmarked_on_n_samples": 1000
+    }
+  ],
+  "autoencoder": {
+    "model": "Autoencoder",
+    "fp32_size_kb": 155.94,
+    "int8_dynamic_quantized_size_kb": 47.46,
+    "size_reduction_pct": 69.6,
+    "fp32_inference_latency_ms_per_sample": 0.011,
+    "int8_inference_latency_ms_per_sample": 0.00345,
+    "benchmarked_on_n_samples": 1000,
+    "benchmark_device": "CPU (this machine -- NOT an embedded/ARM device; see script docstring)"
+  },
+  "vae": {
+    "model": "VAE",
+    "fp32_size_kb": 160.56,
+    "int8_dynamic_quantized_size_kb": 49.7,
+    "size_reduction_pct": 69.0,
+    "fp32_inference_latency_ms_per_sample": 0.00399,
+    "int8_inference_latency_ms_per_sample": 0.00148,
+    "benchmarked_on_n_samples": 1000,
+    "benchmark_device": "CPU (this machine -- NOT an embedded/ARM device; see script docstring)"
+  },
+  "note": "Latency/memory measured on this development machine's CPU, not on embedded/ARM hardware. For a genuine ARM number, run this same script on an Oracle Cloud Always-Free Ampere A1 instance (real ARM CPU, no cost) and report those figures alongside or instead of these. Full microcontroller-class (Cortex-M) validation is out of scope without physical hardware."
+}

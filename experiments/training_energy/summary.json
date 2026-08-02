@@ -1,0 +1,9 @@
+{
+  "model": "Random Forest (100 trees, same config as main experiment)",
+  "train_samples": 1113112,
+  "measurement_tool": "codecarbon (OfflineEmissionsTracker, country=NPL grid carbon intensity)",
+  "duration_seconds": 80.16743787500309,
+  "energy_consumed_kwh": 0.0012513768311516829,
+  "co2_emissions_kg": 3.0583649753347136e-05,
+  "caveat": "CPU/RAM power estimated from hardware modeling (psutil/RAPL-based), not a wall power meter reading. Reported as a standard, tool-based estimate, not a lab measurement."
+}

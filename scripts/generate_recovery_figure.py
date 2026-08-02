@@ -45,14 +45,16 @@ def plot_recovery_gains(results_path, output_path):
     ax.set_xticks(x)
     ax.set_xticklabels([CONN_LABELS[c] for c in connectivities])
     ax.set_ylim(0, 100)
-    ax.legend(title='Compute budget', frameon=False)
     ax.grid(axis='y', linestyle='--', linewidth=0.5, color='gray', alpha=0.5)
+    fig.legend(title='Compute budget', frameon=False, loc='upper center',
+               bbox_to_anchor=(0.5, 1.18), ncol=3)
     plt.tight_layout()
-    plt.savefig(output_path)
+    plt.savefig(output_path, bbox_inches='tight')
     plt.close()
 
 
 if __name__ == "__main__":
-    os.makedirs('arxiv_final', exist_ok=True)
-    plot_recovery_gains('experiments/recovery/results.json', 'arxiv_final/figure6_recovery_mttr.png')
-    print("Saved arxiv_final/figure6_recovery_mttr.png")
+    for outdir in ('arxiv_final', 'cee_submission'):
+        os.makedirs(outdir, exist_ok=True)
+        plot_recovery_gains('experiments/recovery/results.json', f'{outdir}/figure6_recovery_mttr.png')
+        print(f"Saved {outdir}/figure6_recovery_mttr.png")

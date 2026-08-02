@@ -38,4 +38,5 @@ venv/
 # Experiment artifacts
 # By default, we might want to keep some reports but ignore models and large splits
 experiments/preprocessing/cicids2017/splits.npz
+experiments/preprocessing/farmflow/splits.npz
 # experiments/**/*.pt

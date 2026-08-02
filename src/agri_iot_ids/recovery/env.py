@@ -23,6 +23,16 @@ class AgriIoTRecoveryEnv:
     attack_start: int = 5
     max_steps: int = 100
     seed: int | None = None
+    # Detector-confidence distribution parameters. Defaults reproduce the
+    # original assumed values (0.9/0.08 while actively attacked, 0.6/0.2
+    # while compromised/isolated/recovering but not actively attacking).
+    # hybrid_ablation.py overrides these with values empirically measured
+    # from the actual Tier-1+Tier-2 detector's confidence distribution on
+    # true positives/negatives, rather than leaving them as an assumption.
+    conf_active_mean: float = 0.9
+    conf_active_std: float = 0.08
+    conf_idle_mean: float = 0.6
+    conf_idle_std: float = 0.2
 
     def __post_init__(self) -> None:
         self.rng = random.Random(self.seed)
@@ -41,9 +51,9 @@ class AgriIoTRecoveryEnv:
     def _obs(self) -> dict:
         detector_conf = 0.0
         if self.attack_active:
-            detector_conf = min(1.0, max(0.0, self.rng.gauss(0.9, 0.08)))
+            detector_conf = min(1.0, max(0.0, self.rng.gauss(self.conf_active_mean, self.conf_active_std)))
         elif self.device_state != HEALTHY:
-            detector_conf = min(1.0, max(0.0, self.rng.gauss(0.6, 0.2)))
+            detector_conf = min(1.0, max(0.0, self.rng.gauss(self.conf_idle_mean, self.conf_idle_std)))
         return {"device_state": self.device_state, "detector_conf": detector_conf, "t": self.t}
 
     def step(self, action: int) -> tuple[dict, bool]:
